@@ -16,4 +16,4 @@ Since this project is a static web page with no backend dependencies, running it
 3. No server, database, or build process is required!
 
 ## Deployment URL
-[여기에 Vercel 배포 주소를 입력하세요]
+[https://promptcrafter-six.vercel.app](https://promptcrafter-six.vercel.app)
