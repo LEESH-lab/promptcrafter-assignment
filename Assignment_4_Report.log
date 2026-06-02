@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  2 JUN 2026 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  2 JUN 2026 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,23 +405,9 @@ sic HTML/CSS skele-ton and sim-ple string-concatenation
  []
 
 [2]
-Overfull \hbox (13.9374pt too wide) in paragraph at lines 123--124
-[]\LUC/nanummj/m/n/10.95/d5 ^^D\LUC/nanummj/m/n/10.95/b8 l\LUC/nanummj/m/n/10.9
-5/d5 ^^D\LUC/nanummj/m/n/10.95/d2 ¸ \LUC/nanummj/m/n/10.95/c0 Ý\LUC/nanummj/m/n
-/10.95/c1 1\LUC/nanummj/m/n/10.95/ae 0\LUC/nanummj/m/n/10.95/b7 |\LUC/nanummj/m
-/n/10.95/b2 ” \LUC/nanummj/m/n/10.95/c5 D\LUC/nanummj/m/n/10.95/c7 t\LUC/nanumm
-j/m/n/10.95/b5 ^^T\LUC/nanummj/m/n/10.95/c5 ´Ð \LUC/nanummj/m/n/10.95/b9 Þ\LUC/
-nanummj/m/n/10.95/cd °\LUC/nanummj/m/n/10.95/c1 ^^\ \OT1/cmr/m/n/10.95 PRD\LUC/
-nanummj/m/n/10.95/b9 | \LUC/nanummj/m/n/10.95/ba <\LUC/nanummj/m/n/10.95/c8 ^^@
- \LUC/nanummj/m/n/10.95/c7 ‘\LUC/nanummj/m/n/10.95/c1 1\LUC/nanummj/m/n/10.95/d
-5 t\LUC/nanummj/m/n/10.95/c9 ^^X\OT1/cmr/m/n/10.95 . \LUC/nanummj/m/n/10.95/d5 
-D\LUC/nanummj/m/n/10.95/c2 ^^X \LUC/nanummj/m/n/10.95/d5 m\LUC/nanummj/m/n/10.9
-5/ba ©\LUC/nanummj/m/n/10.95/c7 x \OT1/cmr/m/n/10.95 Prod-uct Overview,
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 143.
-[3] (Assignment_4_Report.aux)
+(Font)              <10.95> on input line 142.
+ [3] [4] (Assignment_4_Report.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -430,11 +416,11 @@ Package rerunfilecheck Info: File `Assignment_4_Report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10150 strings out of 467871
- 158755 string characters out of 5418376
+ 10057 strings out of 467871
+ 157173 string characters out of 5418376
  595045 words of memory out of 5000000
- 38861 multiletter control sequences out of 15000+600000
- 647531 words of font info for 107 fonts, out of 8000000 for 9000
+ 38813 multiletter control sequences out of 15000+600000
+ 634054 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,458b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\bej32\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -444,63 +430,10 @@ ic/amsfonts/cm/cmbx12.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bej32/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bej32/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/bej32/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjbac.pfb><C:/Use
-rs/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjbad
-.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype
-1/nanummjbbc.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/nanumtype1/nanummjbc0.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/font
-s/type1/public/nanumtype1/nanummjbc1.pfb><C:/Users/bej32/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/nanumtype1/nanummjbc2.pfb><C:/Users/bej32/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjbc8.pfb><C:/Users/bej3
-2/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjbd5.pfb><C
-:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanum
-mjmac.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanu
-mtype1/nanummjmad.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/nanumtype1/nanummjmae.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/nanumtype1/nanummjmaf.pfb><C:/Users/bej32/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/nanumtype1/nanummjmb0.pfb><C:/Users/bej32/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmb1.pfb><C:/Users
-/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmb2.p
-fb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/
-nanummjmb3.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/nanumtype1/nanummjmb4.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/nanumtype1/nanummjmb5.pfb><C:/Users/bej32/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/nanumtype1/nanummjmb7.pfb><C:/Users/bej32/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmb8.pfb><C:/Users/bej32/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmb9.pfb><C:/
-Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummj
-mba.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumt
-ype1/nanummjmbb.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/nanumtype1/nanummjmbc.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/nanumtype1/nanummjmbd.pfb><C:/Users/bej32/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/nanumtype1/nanummjmbe.pfb><C:/Users/bej32/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmbf.pfb><C:/Users/b
-ej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmc0.pfb
-><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/na
-nummjmc1.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
-anumtype1/nanummjmc2.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/nanumtype1/nanummjmc5.pfb><C:/Users/bej32/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/nanumtype1/nanummjmc6.pfb><C:/Users/bej32/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmc7.pfb><C:/Users/bej32/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmc8.pfb><C:/Us
-ers/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmc
-9.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtyp
-e1/nanummjmcc.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/nanumtype1/nanummjmcd.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/nanumtype1/nanummjmce.pfb><C:/Users/bej32/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/nanumtype1/nanummjmcf.pfb><C:/Users/bej32/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmd0.pfb><C:/Users/bej
-32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanummjmd1.pfb><
-C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nanumtype1/nanu
-mmjmd2.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type1/public/nan
-umtype1/nanummjmd3.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/nanumtype1/nanummjmd4.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/nanumtype1/nanummjmd5.pfb><C:/Users/bej32/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on Assignment_4_Report.pdf (3 pages, 2173102 bytes).
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Assignment_4_Report.pdf (4 pages, 116303 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
