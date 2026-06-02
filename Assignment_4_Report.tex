@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Assignment 4 Report},
+}
+
+\title{\textbf{Assignment 4: Web Service Implementation} \\ \large PRD \& AI-Assisted Development Report}
+\author{PromptCrafter - AI Prompt Builder}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Part 1: Product Requirements Document (PRD)}
+
+\subsection*{1. Product Overview}
+\textbf{PromptCrafter} is an AI-assisted web service designed to help users generate highly optimized, professional-grade prompts for Large Language Models (LLMs) like ChatGPT, Claude, and Gemini. It solves the ``blank canvas problem'' by providing a structured, intuitive interface where users can select frameworks, roles, and magic keywords without needing to memorize prompt engineering techniques.
+
+\subsection*{2. Target Users}
+\begin{itemize}[noitemsep]
+    \item \textbf{Students \& Academics:} Needs help structuring essays, summarizing papers, or planning study schedules.
+    \item \textbf{Developers:} Needs help debugging code, writing documentation, or understanding new frameworks.
+    \item \textbf{Marketers \& Creators:} Needs engaging copy, content strategies, and SEO optimization.
+    \item \textbf{General Public (Beginners):} People who want to use AI effectively but don't know how to write good prompts.
+\end{itemize}
+\textit{Pain Points Addressed:} Low quality AI responses due to vague instructions, lack of knowledge about prompt engineering, and the repetitive nature of typing out constraints.
+
+\subsection*{3. Project Goals}
+\begin{itemize}[noitemsep]
+    \item Provide a 1-minute, zero-learning-curve prompt generation experience.
+    \item Implement at least 4 proven prompt frameworks (Basic, Chain of Thought, Persona, Extraction).
+    \item Ensure the output is instantly usable via a 1-click copy feature.
+    \item Maintain a visually pleasing, modern glassmorphism UI.
+\end{itemize}
+
+\subsection*{4. Core User Scenario}
+\begin{enumerate}[noitemsep]
+    \item A user wants to write a marketing email but doesn't know how to instruct the AI.
+    \item The user opens PromptCrafter.
+    \item They select the ``Deep Persona'' framework and choose the ``Digital Marketer'' role.
+    \item They enter their task: ``Write a launch email for a new productivity app.''
+    \item They open ``Advanced Options'' and check the ``Virtual Tip'' and ``Reverse Questioning'' magic keywords.
+    \item A perfectly structured markdown prompt is dynamically generated.
+    \item The user clicks ``Copy'' and pastes it into ChatGPT.
+    \item The user clicks ``Save to Library'' to reuse this setup later.
+\end{enumerate}
+
+\subsection*{5. Feature List}
+\begin{itemize}[noitemsep]
+    \item \textbf{Framework Selection} (Must-have): Dropdown to select different prompt engineering structures (RTF, CoT, etc.).
+    \item \textbf{Dynamic Prompt Generator} (Must-have): Real-time text generation based on inputs.
+    \item \textbf{Advanced Options} (Should-have): Inputs for Context, Target Audience, and Constraints.
+    \item \textbf{Prompt Boosters / Magic Keywords} (Should-have): Checkboxes to inject proven prompt hacks (e.g., Virtual Tip, Bias Prevention).
+    \item \textbf{Clipboard Copy} (Must-have): 1-click copy functionality.
+    \item \textbf{My Library} (Nice-to-have): Save and delete favorite prompts using Local Storage.
+\end{itemize}
+
+\subsection*{6. Page Structure}
+The application is a Single Page Application (SPA) divided into three logical sections:
+\begin{enumerate}[noitemsep]
+    \item \textbf{Home Section:} Landing area with a hero title, brief description, and a ``Start'' button.
+    \item \textbf{Builder Section:} The core tool area containing dropdowns, inputs, advanced options toggle, and the real-time result preview.
+    \item \textbf{Library Section:} A dashboard grid displaying previously saved prompts.
+\end{enumerate}
+
+\subsection*{7. Technical Requirements}
+\begin{itemize}[noitemsep]
+    \item \textbf{Frontend:} HTML5, Vanilla CSS3, Vanilla JavaScript (ES6+). No frontend frameworks (React/Vue) are used to keep it lightweight.
+    \item \textbf{Styling:} CSS variables for theming, CSS Flexbox/Grid for layout, and backdrop-filter for glassmorphism.
+    \item \textbf{Storage:} Browser \texttt{localStorage} API for the Library feature (No backend/database).
+    \item \textbf{Deployment:} Vercel (Static Site Deployment).
+\end{itemize}
+
+\subsection*{8. Design Requirements}
+\begin{itemize}[noitemsep]
+    \item \textbf{Theme:} Dark Mode by default.
+    \item \textbf{Aesthetics:} ``Glassmorphism'' - semi-transparent panels with background blur over floating, animated gradient orbs.
+    \item \textbf{Typography:} `Outfit' Google Font for a modern, geometric, and clean look.
+    \item \textbf{Interactions:} Smooth CSS transitions for button hovers, section toggling, and expanding the advanced options panel.
+\end{itemize}
+
+\subsection*{9. Milestones}
+\begin{enumerate}[noitemsep]
+    \item \textbf{Idea Definition \& PRD Completion:} Outline the problem, solution, and core features.
+    \item \textbf{First Prototype:} Implement the basic HTML/CSS skeleton and simple string-concatenation JS logic.
+    \item \textbf{Advanced Implementation:} Integrate prompt frameworks and magic keywords based on prompt engineering research.
+    \item \textbf{Refinement \& Testing:} Add smooth UI transitions and test Local Storage persistence.
+    \item \textbf{Final Deployment:} Push code to GitHub and deploy publicly via Vercel.
+\end{enumerate}
+
+\newpage
+
+\section*{Part 2: AI-Assisted Development Report}
+
+\subsection*{1. AI Tools Used}
+\begin{itemize}[noitemsep]
+    \item Gemini 3.1 Pro (via Antigravity IDE)
+\end{itemize}
+
+\subsection*{2. Tasks Assisted by AI}
+\begin{itemize}[noitemsep]
+    \item Idea Generation: 백엔드 없이 구현 가능하면서도 과제 요구사항(JS 인터랙션, 3개 이상의 뷰)을 충족하는 프로젝트 아이디어를 함께 브레인스토밍했습니다.
+    \item PRD Writing: 과제 가이드라인의 필수 항목(타겟 사용자, 시나리오, 기능 목록 등)에 맞춘 제품 요구사항 정의서(PRD) 초안 및 영문 최종본을 작성했습니다.
+    \item UI/UX Design \& Publishing: HTML 뼈대 구성 및 Glassmorphism, 다크 모드, 백그라운드 애니메이션 등 최신 트렌드를 반영한 CSS 스타일링을 진행했습니다.
+    \item JavaScript Implementation: 실시간 프롬프트 조립, 클립보드 복사, 브라우저 Local Storage를 활용한 데이터 저장 및 삭제 로직을 구현했습니다.
+    \item Prompt Engineering Logic: 리서치를 바탕으로 한 4가지 프롬프트 프레임워크(Chain of Thought 등) 및 매직 키워드(Prompt Boosters) 동적 생성 로직을 추가했습니다.
+\end{itemize}
+
+\subsection*{3. Representative Prompts Used}
+\begin{enumerate}[noitemsep]
+    \item 프롬프트 생성기라는 아이디어에 맞춰서 PRD를 먼저 작성해줘. 필수 항목인 Product Overview, Target Users 등이 다 들어가야 해.
+    \item 작성된 PRD를 바탕으로 index.html, style.css, script.js 파일들을 생성해서 프로젝트를 구현해. 기능과 함께 디자인을 글래스모피즘과 다크 테마로 화려하게 꾸며줘.
+    \item 이 브런치 아티클 사이트를 참고해서, 논문에 나온 프롬프트 해킹 기법들(팁 주기, 역질문 요청 등)을 체크박스 형태의 매직 키워드 기능으로 우리 웹사이트에 추가해줘.
+\end{enumerate}
+
+\subsection*{4. Modifications and Improvements (수정 및 개선 사항)}
+\begin{itemize}[noitemsep]
+    \item 자연스러운 프롬프트 생성: 처음에 출력된 영문 위주의 단순 병합식 템플릿을 폐기하고, 목적에 맞게 4가지 프레임워크(기본, 단계별 추론, 페르소나, 정보추출)로 분기 처리하여 구조화된 마크다운을 출력하도록 엔진을 제가 직접 전면 개편했습니다.
+    \item 프롬프트 부스터 추가: 리서치한 글의 팁을 반영하여, 체크박스만 누르면 답변 퀄리티를 높이는 매직 키워드(가상의 팁 약속, 역질문 유도 등)가 프롬프트 하단에 자동으로 붙도록 로직과 UI(토글형 고급 옵션)를 추가로 구현했습니다.
+    \item 디자인 디테일: 배경의 원형 애니메이션 속도가 너무 빨라 어지러운 점을 개선하고자, 10초로 늘려 시선 분산을 막고, 고급 옵션 패널에 부드러운 드롭다운 애니메이션을 추가했습니다.
+\end{itemize}
+
+\subsection*{5. Bugs, Errors, and Limitations Found (버그 및 해결 과정)}
+\begin{itemize}[noitemsep]
+    \item 이슈: 처음 브라우저를 열어 라이브러리(Local Storage) 기능을 실행할 때, 저장된 데이터가 하나도 없으면 null 값을 반환하여 JavaScript 에러가 발생하는 문제가 발생했습니다.
+    \item 해결 방안: 코드를 수정하여 데이터를 불러올 때 빈 배열을 기본값으로 반환하도록 예외 처리를 추가해 에러를 성공적으로 해결했습니다.
+\end{itemize}
+
+\subsection*{6. Final Vercel Deployment URL}
+\begin{itemize}[noitemsep]
+    \item \url{https://promptcrafter-six.vercel.app}
+\end{itemize}
+
+\end{document}
