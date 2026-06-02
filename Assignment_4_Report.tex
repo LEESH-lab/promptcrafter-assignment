@@ -23,24 +23,24 @@
 
 \maketitle
 
-\section*{Part 1: Product Requirements Document (PRD)}
+\section*{Part 1: Product Requirements Document}
 
 \subsection*{1. Product Overview}
-\textbf{PromptCrafter} is an AI-assisted web service designed to help users generate highly optimized, professional-grade prompts for Large Language Models (LLMs) like ChatGPT, Claude, and Gemini. It solves the ``blank canvas problem'' by providing a structured, intuitive interface where users can select frameworks, roles, and magic keywords without needing to memorize prompt engineering techniques.
+PromptCrafter is an AI-assisted web service designed to help users generate highly optimized, professional-grade prompts for Large Language Models like ChatGPT, Claude, and Gemini. It solves the blank canvas problem by providing a structured, intuitive interface where users can select frameworks, roles, and magic keywords without needing to memorize prompt engineering techniques.
 
 \subsection*{2. Target Users}
 \begin{itemize}[noitemsep]
-    \item \textbf{Students \& Academics:} Needs help structuring essays, summarizing papers, or planning study schedules.
-    \item \textbf{Developers:} Needs help debugging code, writing documentation, or understanding new frameworks.
-    \item \textbf{Marketers \& Creators:} Needs engaging copy, content strategies, and SEO optimization.
-    \item \textbf{General Public (Beginners):} People who want to use AI effectively but don't know how to write good prompts.
+    \item Students \& Academics: Needs help structuring essays, summarizing papers, or planning study schedules.
+    \item Developers: Needs help debugging code, writing documentation, or understanding new frameworks.
+    \item Marketers \& Creators: Needs engaging copy, content strategies, and SEO optimization.
+    \item General Public: People who want to use AI effectively but don't know how to write good prompts.
 \end{itemize}
-\textit{Pain Points Addressed:} Low quality AI responses due to vague instructions, lack of knowledge about prompt engineering, and the repetitive nature of typing out constraints.
+Pain Points Addressed: Low quality AI responses due to vague instructions, lack of knowledge about prompt engineering, and the repetitive nature of typing out constraints.
 
 \subsection*{3. Project Goals}
 \begin{itemize}[noitemsep]
     \item Provide a 1-minute, zero-learning-curve prompt generation experience.
-    \item Implement at least 4 proven prompt frameworks (Basic, Chain of Thought, Persona, Extraction).
+    \item Implement at least 4 proven prompt frameworks.
     \item Ensure the output is instantly usable via a 1-click copy feature.
     \item Maintain a visually pleasing, modern glassmorphism UI.
 \end{itemize}
@@ -49,55 +49,55 @@
 \begin{enumerate}[noitemsep]
     \item A user wants to write a marketing email but doesn't know how to instruct the AI.
     \item The user opens PromptCrafter.
-    \item They select the ``Deep Persona'' framework and choose the ``Digital Marketer'' role.
-    \item They enter their task: ``Write a launch email for a new productivity app.''
-    \item They open ``Advanced Options'' and check the ``Virtual Tip'' and ``Reverse Questioning'' magic keywords.
+    \item They select the Deep Persona framework and choose the Digital Marketer role.
+    \item They enter their task: Write a launch email for a new productivity app.
+    \item They open Advanced Options and check the Virtual Tip and Reverse Questioning magic keywords.
     \item A perfectly structured markdown prompt is dynamically generated.
-    \item The user clicks ``Copy'' and pastes it into ChatGPT.
-    \item The user clicks ``Save to Library'' to reuse this setup later.
+    \item The user clicks Copy and pastes it into ChatGPT.
+    \item The user clicks Save to Library to reuse this setup later.
 \end{enumerate}
 
 \subsection*{5. Feature List}
 \begin{itemize}[noitemsep]
-    \item \textbf{Framework Selection} (Must-have): Dropdown to select different prompt engineering structures (RTF, CoT, etc.).
-    \item \textbf{Dynamic Prompt Generator} (Must-have): Real-time text generation based on inputs.
-    \item \textbf{Advanced Options} (Should-have): Inputs for Context, Target Audience, and Constraints.
-    \item \textbf{Prompt Boosters / Magic Keywords} (Should-have): Checkboxes to inject proven prompt hacks (e.g., Virtual Tip, Bias Prevention).
-    \item \textbf{Clipboard Copy} (Must-have): 1-click copy functionality.
-    \item \textbf{My Library} (Nice-to-have): Save and delete favorite prompts using Local Storage.
+    \item Framework Selection: Dropdown to select different prompt engineering structures.
+    \item Dynamic Prompt Generator: Real-time text generation based on inputs.
+    \item Advanced Options: Inputs for Context, Target Audience, and Constraints.
+    \item Prompt Boosters: Checkboxes to inject proven prompt hacks.
+    \item Clipboard Copy: 1-click copy functionality.
+    \item My Library: Save and delete favorite prompts using Local Storage.
 \end{itemize}
 
 \subsection*{6. Page Structure}
-The application is a Single Page Application (SPA) divided into three logical sections:
+The application is a Single Page Application divided into three logical sections:
 \begin{enumerate}[noitemsep]
-    \item \textbf{Home Section:} Landing area with a hero title, brief description, and a ``Start'' button.
-    \item \textbf{Builder Section:} The core tool area containing dropdowns, inputs, advanced options toggle, and the real-time result preview.
-    \item \textbf{Library Section:} A dashboard grid displaying previously saved prompts.
+    \item Home Section: Landing area with a hero title, brief description, and a Start button.
+    \item Builder Section: The core tool area containing dropdowns, inputs, advanced options toggle, and the real-time result preview.
+    \item Library Section: A dashboard grid displaying previously saved prompts.
 \end{enumerate}
 
 \subsection*{7. Technical Requirements}
 \begin{itemize}[noitemsep]
-    \item \textbf{Frontend:} HTML5, Vanilla CSS3, Vanilla JavaScript (ES6+). No frontend frameworks (React/Vue) are used to keep it lightweight.
-    \item \textbf{Styling:} CSS variables for theming, CSS Flexbox/Grid for layout, and backdrop-filter for glassmorphism.
-    \item \textbf{Storage:} Browser \texttt{localStorage} API for the Library feature (No backend/database).
-    \item \textbf{Deployment:} Vercel (Static Site Deployment).
+    \item Frontend: HTML5, Vanilla CSS3, Vanilla JavaScript. No frontend frameworks are used to keep it lightweight.
+    \item Styling: CSS variables for theming, CSS Flexbox/Grid for layout, and backdrop-filter for glassmorphism.
+    \item Storage: Browser localStorage API for the Library feature.
+    \item Deployment: Vercel.
 \end{itemize}
 
 \subsection*{8. Design Requirements}
 \begin{itemize}[noitemsep]
-    \item \textbf{Theme:} Dark Mode by default.
-    \item \textbf{Aesthetics:} ``Glassmorphism'' - semi-transparent panels with background blur over floating, animated gradient orbs.
-    \item \textbf{Typography:} `Outfit' Google Font for a modern, geometric, and clean look.
-    \item \textbf{Interactions:} Smooth CSS transitions for button hovers, section toggling, and expanding the advanced options panel.
+    \item Theme: Dark Mode by default.
+    \item Aesthetics: Glassmorphism - semi-transparent panels with background blur over floating, animated gradient orbs.
+    \item Typography: Outfit Google Font for a modern, geometric, and clean look.
+    \item Interactions: Smooth CSS transitions for button hovers, section toggling, and expanding the advanced options panel.
 \end{itemize}
 
 \subsection*{9. Milestones}
 \begin{enumerate}[noitemsep]
-    \item \textbf{Idea Definition \& PRD Completion:} Outline the problem, solution, and core features.
-    \item \textbf{First Prototype:} Implement the basic HTML/CSS skeleton and simple string-concatenation JS logic.
-    \item \textbf{Advanced Implementation:} Integrate prompt frameworks and magic keywords based on prompt engineering research.
-    \item \textbf{Refinement \& Testing:} Add smooth UI transitions and test Local Storage persistence.
-    \item \textbf{Final Deployment:} Push code to GitHub and deploy publicly via Vercel.
+    \item Idea Definition \& PRD Completion: Outline the problem, solution, and core features.
+    \item First Prototype: Implement the basic HTML/CSS skeleton and simple string-concatenation JS logic.
+    \item Advanced Implementation: Integrate prompt frameworks and magic keywords based on prompt engineering research.
+    \item Refinement \& Testing: Add smooth UI transitions and test Local Storage persistence.
+    \item Final Deployment: Push code to GitHub and deploy publicly via Vercel.
 \end{enumerate}
 
 \newpage
