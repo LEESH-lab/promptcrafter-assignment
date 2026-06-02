@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  2 JUN 2026 15:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.11)  2 JUN 2026 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,10 +404,10 @@ Overfull \hbox (14.81026pt too wide) in paragraph at lines 97--98
 sic HTML/CSS skele-ton and sim-ple string-concatenation
  []
 
-[2]
+[2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 142.
- [3] [4] (Assignment_4_Report.aux)
+ [4] (Assignment_4_Report.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -431,7 +431,7 @@ ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/bej32/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bej32/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bej32/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Assignment_4_Report.pdf (4 pages, 116303 bytes).
+Output written on Assignment_4_Report.pdf (4 pages, 116451 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)

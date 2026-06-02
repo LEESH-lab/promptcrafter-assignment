@@ -111,30 +111,30 @@ The application is a Single Page Application (SPA) divided into three logical se
 
 \subsection*{2. Tasks Assisted by AI}
 \begin{itemize}[noitemsep]
-    \item PRD Writing: I came up with the core idea for a prompt generator and used the AI to help structure my thoughts into a professional Product Requirements Document (PRD) that meets the assignment guidelines.
-    \item UI/UX Design \& Publishing: I asked the AI to help write the HTML skeleton and apply modern CSS styling, including glassmorphism, dark mode, and background animations.
-    \item JavaScript Implementation: I used the AI to help implement the core logic, such as real-time prompt assembly, clipboard copying, and saving data using the browser Local Storage.
-    \item Prompt Engineering Logic: I researched prompt engineering techniques (like Chain of Thought and reverse questioning) and instructed the AI to implement these dynamic frameworks and magic keyword checkboxes.
+    \item PRD Writing: The core idea for a prompt generator was developed independently. The AI was subsequently utilized to structure the concepts into a professional Product Requirements Document (PRD) meeting the assignment guidelines.
+    \item UI/UX Design \& Publishing: The AI was instructed to assist in writing the HTML skeleton and applying modern CSS styling, including glassmorphism, dark mode, and background animations.
+    \item JavaScript Implementation: The AI was utilized to help implement the core logic, such as real-time prompt assembly, clipboard copying, and saving data using the browser Local Storage.
+    \item Prompt Engineering Logic: Prompt engineering techniques (such as Chain of Thought and reverse questioning) were researched, and the AI was instructed to implement these dynamic frameworks and magic keyword checkboxes.
 \end{itemize}
 
 \subsection*{3. Representative Prompts Used}
 \begin{enumerate}[noitemsep]
-    \item I have an idea for a custom AI prompt generator. Help me draft a professional PRD that includes the Product Overview, Target Users, and Feature List.
-    \item Based on the PRD we wrote, please generate the index.html, style.css, and script.js files. Make sure the design uses a modern glassmorphism aesthetic and a dark theme.
-    \item I read an article about prompt hacking techniques like promising a tip and asking for reverse questions. Please add these as magic keyword checkboxes in our web application.
+    \item A custom AI prompt generator is proposed. Draft a professional PRD that includes the Product Overview, Target Users, and Feature List.
+    \item Based on the drafted PRD, generate the index.html, style.css, and script.js files. Ensure the design utilizes a modern glassmorphism aesthetic and a dark theme.
+    \item Based on prompt hacking techniques such as promising a tip and asking for reverse questions found in a research article, incorporate these as magic keyword checkboxes in the web application.
 \end{enumerate}
 
 \subsection*{4. Modifications and Improvements}
 \begin{itemize}[noitemsep]
-    \item Natural Prompt Generation: The initial string concatenation method suggested by the AI was too basic. I completely overhauled the engine to use a switch-case statement that handles 4 distinct frameworks (Basic, Chain of Thought, Persona, Extraction) and outputs structured markdown.
-    \item Prompt Boosters: Based on my own research, I added logic and UI for toggleable advanced options. These magic keywords (e.g., promising a virtual tip, inducing reverse questions) are automatically appended to the bottom of the prompt when checked, significantly improving the output quality.
-    \item Design Details: The initial background gradient animation was too fast and distracting. I adjusted the CSS animation duration to 10 seconds to create a much smoother and less intrusive visual experience, and added smooth dropdown animations to the advanced options panel.
+    \item Natural Prompt Generation: The initial string concatenation method suggested by the AI was too basic. The engine was completely overhauled to utilize a switch-case statement that handles 4 distinct frameworks (Basic, Chain of Thought, Persona, Extraction) and outputs structured markdown.
+    \item Prompt Boosters: Based on independent research, logic and UI for toggleable advanced options were added. These magic keywords (e.g., promising a virtual tip, inducing reverse questions) are automatically appended to the bottom of the prompt when checked, significantly improving the output quality.
+    \item Design Details: The initial background gradient animation was too fast and distracting. The CSS animation duration was adjusted to 10 seconds to create a much smoother and less intrusive visual experience, and smooth dropdown animations were added to the advanced options panel.
 \end{itemize}
 
 \subsection*{5. Bugs, Errors, and Limitations Found}
 \begin{itemize}[noitemsep]
     \item Issue: When opening the browser to use the library (Local Storage) feature for the first time, the application threw a JavaScript error because the stored data was null, which broke the array forEach method.
-    \item Solution: I fixed this by adding a logical OR operator when parsing the JSON data. If the data is empty or null, it now returns an empty array as the default value, successfully resolving the error.
+    \item Solution: This was resolved by adding a logical OR operator when parsing the JSON data. If the data is empty or null, it now returns an empty array as the default value, successfully eliminating the error.
 \end{itemize}
 
 \subsection*{6. Final Vercel Deployment URL}
