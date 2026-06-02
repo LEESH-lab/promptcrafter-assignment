@@ -34,19 +34,29 @@
         <section id="builder" class="page-section glass-panel">
             <h2>프롬프트 만들기</h2>
             <div class="builder-grid">
-                <div class="form-group">
-                    <label>누구에게 질문하나요? (역할)</label>
-                    <select id="role">
-                        <option value="전문가">분야 전문가</option>
-                        <option value="개발자">시니어 개발자</option>
-                        <option value="마케터">디지털 마케터</option>
-                        <option value="선생님">친절한 선생님</option>
-                        <option value="번역가">전문 번역가</option>
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <label>프레임워크 (프롬프트 구조)</label>
+                    <select id="framework">
+                        <option value="basic">기본 구조 (빠르고 간단한 지시)</option>
+                        <option value="cot">단계별 추론 (논리적 문제 해결)</option>
+                        <option value="persona">페르소나 (전문가 심층 역할 부여)</option>
+                        <option value="extract">정보 추출 및 요약</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>무엇을 하고 싶나요? (목적)</label>
-                    <input type="text" id="task" placeholder="예: 대학 과제용 에세이 작성, 파이썬 코드 디버깅 등" value="리액트로 할 일 관리 앱 만들기">
+                    <label>누구에게 질문하나요? (역할)</label>
+                    <select id="role">
+                        <option value="전문가">일반 전문가</option>
+                        <option value="시니어 개발자">시니어 개발자</option>
+                        <option value="디지털 마케터">디지털 마케터</option>
+                        <option value="카피라이터">카피라이터</option>
+                        <option value="경영 컨설턴트">경영 컨설턴트</option>
+                        <option value="데이터 분석가">데이터 분석가</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>무엇을 하고 싶나요? (목적/작업)</label>
+                    <input type="text" id="task" placeholder="예: 서비스 소개서 작성, 파이썬 코드 디버깅 등" value="리액트로 할 일 관리 앱 만들기">
                 </div>
                 <div class="form-group">
                     <label>어조 (Tone)</label>
@@ -60,16 +70,66 @@
                 <div class="form-group">
                     <label>출력 형식 (Format)</label>
                     <select id="format">
-                        <option value="마크다운 형태">마크다운</option>
+                        <option value="마크다운 형태">마크다운 문서</option>
                         <option value="글머리 기호(Bullet points)">글머리 기호</option>
-                        <option value="표(Table) 형태">표</option>
-                        <option value="짧은 요약문">요약문</option>
+                        <option value="표(Table) 형태">표 (Table)</option>
+                        <option value="코드 블록">코드 블록</option>
                     </select>
+                </div>
+            </div>
+
+            <div class="advanced-toggle-container">
+                <button id="advanced-toggle-btn" class="btn-secondary toggle-btn">
+                    고급 옵션 열기 <span class="arrow">▼</span>
+                </button>
+            </div>
+
+            <div id="advanced-options" class="advanced-options-panel hidden">
+                <div class="form-group">
+                    <label>배경 지식 (Context) - <span>AI가 상황을 이해할 수 있도록 정보를 제공하세요.</span></label>
+                    <textarea id="context" placeholder="예: 우리 회사는 20대 대학생을 타겟으로 하는 생산성 앱을 만들고 있습니다..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>대상 독자 (Target Audience)</label>
+                    <input type="text" id="audience" placeholder="예: 코딩을 처음 배우는 초보자, B2B 기업 고객 등">
+                </div>
+                <div class="form-group">
+                    <label>제약 사항 (Constraints) - <span>반드시 지켜야 할 규칙</span></label>
+                    <textarea id="constraints" placeholder="예: 500자 이내로 작성해줘. 전문 용어는 사용하지 마."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>참고 예시 (Few-Shot Examples) - <span>원하는 결과물의 예시를 제공하면 정확도가 급상승합니다.</span></label>
+                    <textarea id="examples" placeholder="예시 1: ... &#10;예시 2: ..."></textarea>
+                </div>
+                <div class="form-group booster-group">
+                    <label>🚀 프롬프트 부스터 (매직 키워드) - <span>체크하면 답변 퀄리티가 상승하는 마법의 문구들이 추가됩니다.</span></label>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="booster-tip" value="tip">
+                            <span class="custom-checkbox"></span>
+                            가상의 '팁(Tip)' 약속하기
+                        </label>
+                        <label class="checkbox-label" title="정보가 충분해질 때까지 질문을 던져달라고 요청합니다.">
+                            <input type="checkbox" id="booster-question" value="question">
+                            <span class="custom-checkbox"></span>
+                            완벽한 개인화를 위한 역질문 요청 🌟
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="booster-bias" value="bias">
+                            <span class="custom-checkbox"></span>
+                            편견 및 고정관념 배제
+                        </label>
+                        <label class="checkbox-label" title="능동적 학습을 위해, 내용 이해도를 묻는 테스트를 내달라고 요청합니다.">
+                            <input type="checkbox" id="booster-test" value="test">
+                            <span class="custom-checkbox"></span>
+                            이해도 테스트 역질문 요청 🌟
+                        </label>
+                    </div>
                 </div>
             </div>
             
             <div class="result-container">
-                <h3>생성된 프롬프트:</h3>
+                <h3>생성된 고품질 프롬프트:</h3>
                 <textarea id="result-prompt" readonly></textarea>
                 <div class="action-buttons">
                     <button id="copy-btn" class="btn-secondary">📋 복사하기</button>
